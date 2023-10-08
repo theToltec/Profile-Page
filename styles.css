@@ -1,0 +1,225 @@
+html {
+    box-sizing: border-box;
+  }
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+  
+  body {
+    font-family: 'Montserrat';
+    background-color: #1c1d25;
+    color: white;
+    margin: 0;
+  }
+  
+  @media screen and (min-width: 480px) {
+    body {
+      background-color:;
+    }
+  }
+
+  /* HEADER Start */
+  #header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 75px;
+    background-color: #1c1d25;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 12;
+  }
+  
+  #logo {
+    height: auto;
+    width: 70px;
+  }
+  
+  #navbar {
+  font-size: 125%
+  }
+  
+  #nav-link {
+    text-decoration: none;
+    color: white;
+    margin-right: 85px
+  }
+  
+  #nav-link:hover {
+    color: #f1be32;
+  }
+  
+  #nav-link:last-of-type {
+    margin-right: 0
+  }
+  /* HEADER End */
+
+
+  
+  /* WELCOME Start */
+  #welcome-section {
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  #welcome-logo {
+    height: auto;
+    width: 800px;
+    align-self: center;
+  }
+
+  .welcome-logo {
+    display: flex;
+  }
+  
+  .aboutme {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    margin-right: 170px;
+    min-width: 780px;
+  }
+  
+  #aboutme,
+  #aboutme1,
+  #aboutme2 {
+    font-size: 150%;
+    line-height: 1.3;
+  }
+  
+  #socials {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: fixed; 
+    right: 0px; 
+    top: 396px; 
+    height: 83px;
+  }
+  
+  .social-logo {
+    height: auto;
+    width: 100px;
+  }
+  
+  #profile-link:hover {
+    content: url("img/github-logo-white.png");
+  }
+  #twitter:hover {
+    content: url("img/twitter-logo-white.png");
+  }
+  #linkedin:hover {
+    content: url("img/linkedin-logo-white.png");
+  }
+  /* WELCOME End */
+  
+
+
+  /* PROJECTS Start */
+  #projects {
+    background-color: #3A668C;
+    height: 173vh;
+    border: solid red;
+  }
+
+
+/* PROJECT #1 START */
+  .project-tile {
+    position: relative;
+    display: inline-block;
+    border: solid red;
+    top: 10%; 
+    left: 35%; 
+  }
+
+  .project-tile img {
+    display: block;
+    height: auto;
+    width: 1000px;
+    box-shadow: 10px 10px 5px #1f1d1d;
+  }
+
+  #recipe-overlay-text {
+    position: absolute;
+    top: 160%; 
+    left: 45%; 
+    transform: translate(-50%, -50%); 
+    color: black; 
+    text-shadow: 10px 10px 5px #1f1d1d;
+    padding: 10px 20px; 
+    font-size: 300%; 
+    text-align: center;
+  }
+/* PROJECT #1 END */
+
+
+
+/* PROJECT #2 START */
+.project-tile2 {
+    position: relative;
+    display: inline-block;
+    border: solid red;
+    top: 20%; 
+    left: 10%; 
+  }
+
+  .project-tile2 img {
+    display: block;
+    height: auto;
+    width: 1000px;
+    box-shadow: 10px 10px 5px #1f1d1d;
+  }
+
+  #nothing-overlay-text {
+    position: absolute;
+    top: 237%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    color: #fff; 
+    text-shadow: 10px 10px 5px #f1e3e3;
+    padding: 10px 20px; 
+    font-size: 300%; 
+    text-align: center;
+  }
+
+/* PROJECT #2 END */
+/* PROJECTS End */
+
+
+
+/* PROFILE START */
+ #profile {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+ }
+
+ .profile-logo {
+    align-self: center;
+}
+
+ #profile-logo {
+    object-fit: cover;
+    height: auto;
+    width: 600px;
+ }
+
+ #thank-you {
+    align-self: center;
+ }
+
+ #aboutme3,
+  #aboutme4,
+  #aboutme5 {
+    font-size: 150%;
+    line-height: 1.3;
+  }
+/* PROFILE END */
+
+  
