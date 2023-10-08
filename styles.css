@@ -64,25 +64,27 @@ html {
   #welcome-section {
     height: 100vh;
     display: flex;
-    justify-content: space-around;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
   }
   
   #welcome-logo {
     height: auto;
     width: 800px;
-    align-self: center;
   }
 
   .welcome-logo {
     display: flex;
+    flex-wrap: wrap;
+    align-self: center;
   }
   
   .aboutme {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     align-self: center;
-    margin-right: 170px;
-    min-width: 780px;
   }
   
   #aboutme,
@@ -124,36 +126,37 @@ html {
   #projects {
     background-color: #3A668C;
     height: 173vh;
-    border: solid red;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
   }
 
 
 /* PROJECT #1 START */
   .project-tile {
-    position: relative;
-    display: inline-block;
-    border: solid red;
-    top: 10%; 
-    left: 35%; 
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 1000px;
+    margin-top: 120px;
+    margin-left: 280px;
   }
 
   .project-tile img {
-    display: block;
     height: auto;
-    width: 1000px;
+    max-width: 100%;
     box-shadow: 10px 10px 5px #1f1d1d;
+    vertical-align: middle;
   }
 
   #recipe-overlay-text {
-    position: absolute;
-    top: 160%; 
-    left: 45%; 
-    transform: translate(-50%, -50%); 
     color: black; 
     text-shadow: 10px 10px 5px #1f1d1d;
-    padding: 10px 20px; 
     font-size: 300%; 
-    text-align: center;
+    min-width: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 /* PROJECT #1 END */
 
@@ -161,30 +164,29 @@ html {
 
 /* PROJECT #2 START */
 .project-tile2 {
-    position: relative;
-    display: inline-block;
-    border: solid red;
-    top: 20%; 
-    left: 10%; 
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 1000px;
+  margin-top: 100px;
+  margin-left: 580px;
   }
 
   .project-tile2 img {
-    display: block;
     height: auto;
-    width: 1000px;
+    max-width: 100%;
     box-shadow: 10px 10px 5px #1f1d1d;
+    vertical-align: middle;
   }
 
   #nothing-overlay-text {
-    position: absolute;
-    top: 237%; 
-    left: 50%; 
-    transform: translate(-50%, -50%); 
     color: #fff; 
     text-shadow: 10px 10px 5px #f1e3e3;
-    padding: 10px 20px; 
     font-size: 300%; 
-    text-align: center;
+    min-width: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
 /* PROJECT #2 END */
@@ -196,6 +198,7 @@ html {
  #profile {
     height: 100vh;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-around;
  }
@@ -212,6 +215,9 @@ html {
 
  #thank-you {
     align-self: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
  }
 
  #aboutme3,
@@ -221,5 +227,3 @@ html {
     line-height: 1.3;
   }
 /* PROFILE END */
-
-  
