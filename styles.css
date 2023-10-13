@@ -66,7 +66,7 @@ html {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 50px;
+    gap: 100px;
   }
   
   #welcome-logo {
@@ -85,6 +85,7 @@ html {
     flex-wrap: wrap;
     flex-direction: column;
     align-self: center;
+    min-width: 50%;
   }
   
   #aboutme,
@@ -98,15 +99,15 @@ html {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    position: fixed; 
-    right: 0px; 
-    top: 396px; 
+    position: fixed;
+    right: 0;
+    top: 50%; 
     height: 83px;
   }
   
   .social-logo {
     height: auto;
-    width: 100px;
+    width: 105px;
   }
   
   #profile-link:hover {
@@ -125,10 +126,14 @@ html {
   /* PROJECTS Start */
   #projects {
     background-color: #3A668C;
-    height: 173vh;
+    height: 100vh;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
+    gap: 30px;
+    
   }
 
 
@@ -137,9 +142,8 @@ html {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    width: 1000px;
-    margin-top: 120px;
-    margin-left: 280px;
+    align-items: center;
+    max-width: 800px;
   }
 
   .project-tile img {
@@ -157,6 +161,7 @@ html {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    text-align: center;
   }
 /* PROJECT #1 END */
 
@@ -167,14 +172,13 @@ html {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  width: 1000px;
-  margin-top: 100px;
-  margin-left: 580px;
+  align-items: center;
+  max-width: 800px;
   }
 
   .project-tile2 img {
     height: auto;
-    max-width: 100%;
+    max-width: 103%;
     box-shadow: 10px 10px 5px #1f1d1d;
     vertical-align: middle;
   }
@@ -187,6 +191,7 @@ html {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    text-align: center;
   }
 
 /* PROJECT #2 END */
